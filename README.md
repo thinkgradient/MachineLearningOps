@@ -18,11 +18,12 @@ The following development environments are supported:
 
 However, for the purpose of this lab we will set up your lab environment in your local machine (PC or Laptop). These are the pre-requisites in terms of software and libraries in order to execute each of these labs:
 
-Windows/Mac/Linux 
- **Please make sure you have the latest version of Anaconda installed https://www.anaconda.com/distribution/#download-section**
- **Install the following libraries**
- ***pip install --upgrade azureml-sdk[explain,automl]***
- ***pip install azureml-widgets***
+Windows/Mac/Linux:
+ 
+- **Please make sure you have the latest version of Anaconda installed https://www.anaconda.com/distribution/#download-section**
+- **Install the following libraries**
+ - ***pip install --upgrade azureml-sdk[explain,automl]***
+ - ***pip install azureml-widgets***
  
 
 
