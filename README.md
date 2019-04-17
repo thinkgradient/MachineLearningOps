@@ -66,4 +66,10 @@ Once the Azure Machine Learning workspace has been created, please click on the 
 
 You will use this information in the **00-AML-Workspace-Setup / 00-setup** jupyter notebook
 
+### (Optional) Model Interpretabiltiy / Explainability
+
+Model interpretability and explainability is becoming increasinly important in the Machine Learning world. Microsoft has baked in model interpreatibility and explainability features in its Azure Machine Learning service and you can try this out now. 
+
+1. Read the following introduction on Azure Machine Learning Interpretability SDK: https://docs.microsoft.com/en-us/azure/machine-learning/service/machine-learning-interpretability-explainability
+2. Try out the Jupyter Notebook examples listed in the above link.
 
