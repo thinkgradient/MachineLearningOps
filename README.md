@@ -45,7 +45,7 @@ The steps below outline how you can redeem your promo code and create your new A
 
 ## Create Azure Machine Learning service workspace
 
-Once you have access to an Azrue account follow the steps below to create an Azure Machine Learning workspace.
+Once you have access to an Azure account follow the steps below to create an Azure Machine Learning workspace.
 
 1. In your Azure portal, click **Create a resource**
 2. In the **Search the Marketplace** textbox, type: ***Machine Learning*** and select **Machine Learning service workspace** from the drop down list.
@@ -54,7 +54,16 @@ Once you have access to an Azrue account follow the steps below to create an Azu
 5. For **Workspace name** give it a name (e.g. MLOpsYourName)
 6. For **Resource group** give it a name (e.g. MLOpsYourNameRGR)
 7. For **Location** please select: West Europe
+8. Click the button **Create** to create the Machine Learning workspace
 
+### AML workspace information needed for the labs jupyter notebook
 
+Once the Azure Machine Learning workspace has been created, please click on the AML Service in the Azure portal and capture the following information which you will use in a labs Jupyter Notebook.
+- **Subscription ID**
+- **Location**
+- **Resource group**
+- **Workspace name** which is just the name of the AML service
+
+You will use this information in the **00-AML-Workspace-Setup / 00-setup** jupyter notebook
 
 
