@@ -24,34 +24,37 @@ Windows/Mac/Linux:
 - **Install the following libraries**
  - ***pip install --upgrade azureml-sdk[explain,automl]***
  - ***pip install azureml-widgets***
- 
+
+For Windows users (additional steps below):
+
+- **Install git https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-64-bit.exe**
+- **Install wget http://downloads.sourceforge.net/gnuwin32/wget-1.11.4-1-setup.exe**
+- **Make sure to add wget to your Path environment variables**
+
+For Mac users (additional steps below):
+
+- **Install wget: brew update && brew install wget** 
+
+## Redeem your Azure account promo code
+
+The steps below outline how you can redeem your promo code and create your new Azure account. However, if you already have an Azure account please feel free to use that as that is the preferred option. Alternatively, follow the steps below to create a new one using the promo codes we have provided you. Note, the accounts with the promo code will expire after 7 days and they come with a $50 limit.
+
+1. You need to have an .outlook or .live account. Please create one if you don't have it.
+2. Then follow the instructions here to redeem your promo code and create your Azure account: https://www.microsoftazurepass.com/Home/HowTo
 
 
-### To provision Azure Data Science Virtual Machine
+## Create Azure Machine Learning service workspace
 
-1. Follow the instructions at
+Once you have access to an Azrue account follow the steps below to create an Azure Machine Learning workspace.
 
-https://ms.portal.azure.com/#create/microsoft-ads.linux-data-science-vm-ubuntulinuxdsvmubuntu
-
-
-1. After the DSVM is provisioned connect to the pre-installed Jupyter server at:
-
-`https://<your IP address or DNS>:8000`
-  
-1. In Jupyter open a terminal and clone this repository under the `notebooks` folder.
-```
-cd notebooks
-git clone https://github.com/jakazmie/MTC_AzureAILabs.git
-```
-
-1. If you need to update the DSVM to install/update Python libraries - E.g. Azure ML SDK.
-```
-sudo -i
-source activate py36
-# update packages
-exit
-```
+1. In your Azure portal, click **Create a resource**
+2. In the **Search the Marketplace** textbox, type: ***Machine Learning*** and select **Machine Learning service workspace** from the drop down list.
+3. In the next screen click the button **Create**
+4. You only need to fill Workspace name, Resource group, and Location.
+5. For **Workspace name** give it a name (e.g. MLOpsYourName)
+6. For **Resource group** give it a name (e.g. MLOpsYourNameRGR)
+7. For **Location** please select: West Europe
 
 
-1. Follow the instructor who will walk you through the labs.
+
 
