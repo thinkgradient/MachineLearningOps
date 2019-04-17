@@ -1,5 +1,6 @@
-# Introduction to Azure Machine Learning service
-This series of labs introduces core features of Azure Machine Learning service and demonstrates how AML service can be used to orchestrate machine learning workflows. The labs  walk you through the key phases of a machine learning workflow: from data preparation, through model selection and tuning, to model operationalization.
+# Introduction to Machine Learnin Operationalization using Azure Machine Learning Services
+This series of labs introduces core features of Azure Machine Learning (AML) service and demonstrates how AML service can be used to orchestrate machine learning workflows. The labs walk you through the key phases of a machine learning workflow: from data preparation, through model selection and tuning, to model operationalization. It concludes with a lab on Automated Machine Learning. There is an optional Model Interpretability lab which you can run through as well.
+
 
 
 ## Lab environment set up
@@ -15,9 +16,15 @@ The following development environments are supported:
 - **PyCharm**
 - **Azure Databricks**
 
-In this workshop we will use Linux (Ubuntu) **Azure Data Science Virtual Machine** as the lab environment.
+However, for the purpose of this lab we will set up your lab environment in your local machine (PC or Laptop). These are the pre-requisites in terms of software and libraries in order to execute each of these labs:
 
-The DSVM comes with all the pre-requisities pre-installed. No additional configuration is required.
+Windows/Mac/Linux 
+ **Please make sure you have the latest version of Anaconda installed https://www.anaconda.com/distribution/#download-section**
+ **Install the following libraries**
+ ***pip install --upgrade azureml-sdk[explain,automl]***
+ ***pip install azureml-widgets***
+ 
+
 
 ### To provision Azure Data Science Virtual Machine
 
