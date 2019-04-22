@@ -1,0 +1,73 @@
+2019-04-17 15:16:22,682 - INFO - 195 : Starting usage telemetry collection
+2019-04-17 15:16:32,690 - INFO - 195 : memory usage 175944
+2019-04-17 15:16:32,693 - INFO - 195 : child memory usage 8600
+2019-04-17 15:16:32,714 - INFO - 195 : cpu time 3.265625
+2019-04-17 15:16:32,714 - INFO - 195 : child cpu time 0.0625
+2019-04-17 15:16:42,742 - INFO - 195 : memory usage 176052
+2019-04-17 15:16:42,744 - INFO - 195 : child memory usage 8600
+2019-04-17 15:16:42,745 - INFO - 195 : cpu time 3.296875
+2019-04-17 15:16:42,754 - INFO - 195 : child cpu time 0.0625
+2019-04-17 15:16:43,471 - INFO - 195 : Starting usage telemetry collection
+2019-04-17 15:16:43,504 - INFO - 195 : Start creating parent run with DTO:  - name: propensity_to_buy_automatedml
+ - subscription_id: 051aa254-957d-4431-a6df-6caa8963bdd7
+ - region: westeurope
+ - compute_target: cpu-cluster
+ - spark_context: None
+ - spark_service: None
+ - iterations: 25
+ - primary_metric: norm_macro_recall
+ - task_type: classification
+ - validation_size: 0.0
+ - n_cross_validations: 5
+ - y_min: None
+ - y_max: None
+ - num_classes: None
+ - preprocess: True
+ - lag_length: 0
+ - is_timeseries: False
+ - max_cores_per_iteration: 1
+ - max_concurrent_iterations: 3
+ - iteration_timeout_minutes: None
+ - mem_in_mb: None
+ - enforce_time_on_windows: False
+ - experiment_timeout_minutes: None
+ - experiment_exit_score: 0.99
+ - whitelist_models: ['LogisticRegression', 'RandomForest', 'LightGBM', 'SVM', 'TensorFlowDNN', 'LogisticRegression', 'RandomForestClassifier', 'LightGBMClassifier', 'SVCWrapper', 'TFDNNClassifierWrapper']
+ - blacklist_algos: None
+ - auto_blacklist: True
+ - blacklist_samples_reached: False
+ - exclude_nan_labels: True
+ - verbosity: 20
+ - show_warnings: False
+ - model_explainability: False
+ - service_url: None
+ - sdk_url: None
+ - sdk_packages: None
+ - enable_onnx_compatible_models: False
+ - telemetry_verbosity: INFO
+ - send_telemetry: True
+ - enable_early_stopping: False
+ - early_stopping_n_iters: 10
+ - metrics: None
+ - enable_ensembling: True
+ - enable_stack_ensembling: False
+ - ensemble_iterations: 15
+ - enable_tf: False
+ - enable_cache: True
+ - enable_subsampling: False
+ - subsample_seed: None
+ - cost_mode: 0
+ - metric_operation: maximize.
+2019-04-17 15:16:44,097 - INFO - 195 : [ParentRunID:AutoML_1e07dc57-2221-444f-a89b-3e205c5e7696] Remote run using user script.
+2019-04-17 15:16:44,381 - INFO - 195 : [RunId:AutoML_1e07dc57-2221-444f-a89b-3e205c5e7696]SDK dependencies versions:{"azureml-widgets": "1.0.23", "azureml-train": "1.0.23", "azureml-train-restclients-hyperdrive": "1.0.23", "azureml-train-core": "1.0.23", "azureml-train-automl": "1.0.23", "azureml-telemetry": "1.0.23", "azureml-sdk": "1.0.23", "azureml-pipeline": "1.0.23", "azureml-pipeline-steps": "1.0.23", "azureml-pipeline-core": "1.0.23", "azureml-explain-model": "1.0.23", "azureml-dataprep": "1.1.1", "azureml-dataprep-native": "11.2.3", "azureml-core": "1.0.23"}.
+2019-04-17 15:16:44,599 - INFO - 195 : Parent Run ID: AutoML_1e07dc57-2221-444f-a89b-3e205c5e7696
+2019-04-17 15:16:45,554 - INFO - 195 : Snapshotted folder: ./project with snapshot_id: a80abf10-c8a3-4bc2-8c04-09216f5a0bab
+2019-04-17 15:16:45,557 - INFO - 195 : Starting a snapshot run (snapshotId : a80abf10-c8a3-4bc2-8c04-09216f5a0bab) with following compute definition: {'Configuration': {'script': 'train.py', 'arguments': [], 'target': 'cpu-cluster', 'framework': 'python', 'communicator': 'None', 'autoPrepareEnvironment': True, 'maxRunDurationSeconds': None, 'nodeCount': 1, 'environment': {'name': None, 'environmentVariables': {'EXAMPLE_ENV_VAR': 'EXAMPLE_VALUE'}, 'python': {'userManagedDependencies': False, 'interpreterPath': 'python', 'baseCondaEnvironment': None, 'condaDependencies': ordereddict([('name', 'project_environment'), ('dependencies', ['python=3.6.2', ordereddict([('pip', ['azureml-defaults==1.0.23', 'azureml-train-automl==1.0.23', 'azureml-explain-model'])]), 'numpy'])])}, 'docker': {'enabled': True, 'baseImage': 'mcr.microsoft.com/azureml/base:0.2.4', 'sharedVolumes': True, 'gpuSupport': False, 'shmSize': '1g', 'arguments': [], 'baseImageRegistry': {'address': None, 'username': None, 'password': None}}, 'spark': {'repositories': ['https://mmlspark.azureedge.net/maven'], 'packages': [{'group': 'com.microsoft.ml.spark', 'artifact': 'mmlspark_2.11', 'version': '0.12'}], 'precachePackages': True}, 'databricks': {'mavenLibraries': [], 'pypiLibraries': [], 'rcranLibraries': [], 'jarLibraries': [], 'eggLibraries': []}}, 'history': {'outputCollection': True, 'snapshotProject': True, 'directoriesToWatch': ['logs']}, 'spark': {'configuration': {'spark.app.name': 'Azure ML Experiment', 'spark.yarn.maxAppAttempts': 1}}, 'hdi': {'yarnDeployMode': 'cluster'}, 'tensorflow': {'workerCount': 1, 'parameterServerCount': 1}, 'mpi': {'processCountPerNode': 1}, 'dataReferences': {'workspaceblobstore': {'dataStoreName': 'workspaceblobstore', 'pathOnDataStore': 'datasets', 'mode': 'download', 'overwrite': True, 'pathOnCompute': 'datasets'}}, 'sourceDirectoryDataStore': None, 'amlcompute': {'vmSize': None, 'vmPriority': None, 'retainCluster': False, 'name': None, 'clusterMaxNodeCount': 1}}}
+2019-04-17 15:16:52,769 - INFO - 195 : memory usage 177300
+2019-04-17 15:16:52,770 - INFO - 195 : child memory usage 8600
+2019-04-17 15:16:52,771 - INFO - 195 : cpu time 3.765625
+2019-04-17 15:16:52,782 - INFO - 195 : child cpu time 0.0625
+2019-04-17 15:16:53,479 - INFO - 195 : memory usage 177316
+2019-04-17 15:16:53,480 - INFO - 195 : child memory usage 8600
+2019-04-17 15:16:53,481 - INFO - 195 : cpu time 3.796875
+2019-04-17 15:16:53,482 - INFO - 195 : child cpu time 0.0625
